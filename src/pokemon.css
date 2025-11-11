@@ -1,0 +1,26 @@
+.pokemonCard{
+  height: 210px;
+  width: 268px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  font-family: sans-serif;
+  font-size:1rem;
+  padding-left: 0.3em;
+}
+.pokemonCard > img{
+  height: 130px;
+  aspect-ratio: 4/3;
+}
+.pokemonId::before{
+  content:'Id: ';
+  font-weight: 700;
+}
+.pokemonName::before{
+  content:'Name: ';
+  font-weight: 700;
+}
+.pokemonType::before{
+  content: 'Type: ';
+  font-weight: 700;
+}
