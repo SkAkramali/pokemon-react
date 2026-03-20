@@ -1,25 +1,15 @@
 name: Run Project
 
-on: [push]
+on:
+  push:
 
 jobs:
   run:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Run script
-        run: echo "Project is running!"name: Run Project
-
-on: [push]
-
-jobs:
-  run:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
       - name: Run script
         run: echo "Project is running!"
